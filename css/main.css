@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    list-style-type: none;
+    text-decoration: none;
+}
+body {
+    background: #D1D1D1;
 }
 
 /* header start */
@@ -25,7 +30,6 @@ header {
     justify-content: space-between;
 }
 .nav__menu {
-    list-style-type: none;
     display: flex;
     align-items: center;
 }
@@ -40,11 +44,11 @@ header {
     font-size: 15px;
     line-height: 28px;
     color: #2F281E;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    transition: all 0.5s ease;
 }
-
+.menu__item .item__link:hover {
+    color: #FF9900;
+}
 .header__buttons button {
     padding: 13px 25px;
     margin-left: 15px;
@@ -62,7 +66,11 @@ header {
     border-radius: 4px;
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.5s ease;
     
+}
+.header__buttons .btn__in:hover {
+    background: #BCD0E5;
 }
 .header__buttons .btn__up {
     font-family: 'Open Sans';
@@ -78,3 +86,467 @@ header {
     border: none;
 }
 /* header finish */
+
+/* main start */
+/* hero start */
+.hero__wrapper {
+    max-width: 1440px;
+    margin: 30px auto;
+}
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero__title {
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+.hero__heading {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    color: #2F281E;
+}
+.hero__text {
+    max-width: 487px;
+    margin-bottom: 45px;
+}
+.hero__desc {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #544837;
+}
+.hero__buttons .btn__start {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding: 16px 40px;
+    background: #FF9900;
+    border-radius: 4px;
+    border: none;
+    margin-right: 44px;
+    cursor: pointer;
+}
+.hero__buttons .btn__watch {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #FF9900;
+    transition: all 0.5s ease;
+}
+.hero__buttons .btn__watch i {
+    margin-right: 10px;
+}
+.hero__buttons .btn__watch:hover {
+    color: #FF7549;
+}
+/* hero finish */
+/* tools start */
+.tools__wrapper {
+    max-width: 1440px;
+    margin: 100px auto;
+}
+.tools__inner {
+    background-image: url('../images/tools-bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 90px;
+}
+.tools__title {
+    max-width: 462px;
+    margin: 70px auto;
+}
+.tools__heading {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #2F281E;
+}
+.tools__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.tools__item__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #2F281E;
+    margin: 30px 0 16px;
+}
+.tools__item__text {
+    max-width: 262px;
+}
+.tools__item__desc {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+.tools__buttons {
+    text-align: center;
+}
+.tools__btn {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 16px 40px;
+    background: #FF7549;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+/* tools finish */
+/* strategies start */
+.strategies__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.strategies__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    color: #2F281E;
+    margin-bottom: 15px;
+}
+.strategies__desc {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+    margin-bottom: 25px;
+}
+.strategies__list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.strategies__item {
+    margin-right: 7px;
+    
+}
+.strategies__item a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 28px;
+    color: #544837;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    border-radius: 90px;
+    padding: 2px 14px;
+}
+.strategies__item .active {
+    color: #FFFFFF;
+    background: #FF9900;
+    border: 1px solid #FF9900;
+}
+
+.strategies__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 96px;
+}
+.strategies__card {
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.strategies__card__title {
+    max-width: 310px;
+    margin-left: 34px;
+    margin-bottom: 30px;
+}
+.strategies__card__heading {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    color: #2F281E;
+    transition: all 0.4s ease;
+}
+.strategies__title__card {
+    max-width: 719px;
+    margin-left: 34px;
+    margin-bottom: 30px;
+}
+.card__inner__list {
+    display: flex;
+    align-items: center;
+    margin-left: 34px;
+    margin-bottom: 26px;
+}
+.card__inner__item {
+    background: #F5F5F5;
+    border-radius: 90px;
+    padding: 2px 14px;
+    margin-right: 5px;
+}
+.card__inner__item a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 28px;
+    color: #544837;
+}
+.strategies__card:hover .strategies__card__heading {
+    color: #FF9900;
+}
+/* strategies finish */
+/* about start */
+.about__wrapper {
+    max-width: 1440px;
+    margin: 100px auto;
+}
+.about__inner {
+
+}
+.about__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    color: #2F281E;
+    margin-bottom: 15px;
+}
+.about__desc {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+.about__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+.about__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    width: 345px;
+    padding: 25px 35px;
+}
+.about__info strong {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+.about__info p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #544837;
+}
+.about__info a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #1943EF;
+}
+.about__img img {
+    position: absolute;
+    top: 5px;
+    right: -70px;
+}
+/* about finish */
+/* contact start */
+#contact {
+    background: #FFEEE1;
+    padding: 60px 0 80px;
+}
+.contact__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.contact__title {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    color: #2F281E;
+    margin-bottom: 17px;
+}
+.contact__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.contact__text {
+    max-width: 528px;
+    margin-bottom: 34px;
+}
+.contact__desc {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+.contact__link {
+    margin-bottom: 22px;
+}
+.contact__link a {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 26px;
+    color: #544837;
+}
+.contact__link a i {
+    color: #FF7B5B;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+.contact__information {
+    display: flex;
+    align-items: center;
+}
+.contact__input {
+    padding: 10px 25px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin-right: 16px;
+    margin-bottom: 20px;
+}
+.contact__input input {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #C6C6C6;
+    border: none;
+    outline: none;
+}
+.contact__message {
+    margin-bottom: 20px;
+}
+.contact__message textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #C6C6C6;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+.contact__button {
+    margin-top: 30px;
+}
+.contact__button a {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FF9900;
+    border-radius: 4px;
+    padding: 16px 30px;
+}
+/* contact finish */
+/* main finish */
+/* footer start */
+footer {
+    background: #FFFFFF;
+    padding: 60px 0 70px;
+}
+.footer__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.footer__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer__strong {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2F281E;
+}
+.footer__link {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+}
+.footer__item {
+    margin-bottom: 10px;
+}
+.footer__item a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color: #544837;
+    transition: all 0.5s ease;
+}
+.footer__item a:hover {
+    color: #FF9900;
+}
+/* footer finish */
