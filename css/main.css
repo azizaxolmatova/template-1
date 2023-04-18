@@ -469,6 +469,7 @@ header {
     color: #C6C6C6;
     border: none;
     outline: none;
+    
 }
 .contact__message {
     margin-bottom: 20px;
@@ -485,6 +486,7 @@ header {
     padding: 10px 25px;
     background: #FFFFFF;
     border-radius: 5px;
+    resize: none;
 }
 .contact__button {
     margin-top: 30px;
